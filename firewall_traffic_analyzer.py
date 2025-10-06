@@ -22,13 +22,13 @@ print("\nFIREWALL LOG:")
 print(f"Port: {port}, Transfer Size: {transfer_size} MB")
 
 if (port == 22 or port == 3389) and transfer_size >= 100:
-    print("RISK ASSESSMENT: HIGH RISK: Potential unauthorized remote access detected!")
+    print("Risk Assessment: HIGH RISK: Potential unauthorized remote access detected!")
 elif port == 80 and transfer_size > 100:
-    print("RISK ASSESSMENT: MEDIUM RISK: Large unencrypted data transfer detected.")
+    print("Risk Assessment: MEDIUM RISK: Large unencrypted data transfer detected.")
 elif port == 443:
-    print("RISK ASSESSMENT: LOW RISK: Secure encrypted transfer detected.")
+    print("Risk Assessment: LOW RISK: Secure encrypted transfer detected.")
 else:
-    print("RISK ASSESSMENT: UNKNOWN: Unrecognized traffic pattern.")
+    print("Risk Assessment: UNKNOWN: Unrecognized traffic pattern.")
 print("------------------------")
 
 
